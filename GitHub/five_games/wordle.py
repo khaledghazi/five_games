@@ -1,7 +1,7 @@
 import random 
 from rich import print
 
-with open('five_games/words.txt') as file:
+with open('words.txt') as file:
     words = [line.rstrip() for line in file]
 #words= ("awake","blush","focal","evade","serve", "model", "karma", "grade", "quite")
 class Wordle:

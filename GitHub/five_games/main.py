@@ -1,6 +1,7 @@
 from gtn import guess_the_number
 from rps import rock_paper_scissors
 from wordle import Wordle
+from connect_four import ConnectFour
 while True:
     txt= """Mini Games !!!
     -Guess the number (1)
@@ -19,7 +20,8 @@ Select a game (press a number or 'q' to quit):"""
         game = Wordle()
         game.play()
     elif value == "4":
-        pass
+        game= ConnectFour()
+        game.play()
     elif value == "5":
         pass
     elif value == "q":
