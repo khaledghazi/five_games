@@ -13,10 +13,8 @@ Select a game (press a number or 'q' to quit):"""
     if value == "1":
         x=int(input('Please enter an upper bound for guessing:'))
         guess_the_number(x)
-        #TODO: ask the user for second input
     elif value == "2":
         rock_paper_scissors()
-        #check against all possible cass, Rock smashes sicssors
     elif value == "3":
         game = Wordle()
         game.play()
