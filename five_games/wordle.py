@@ -1,7 +1,7 @@
 import random 
 from rich import print
 
-with open('words.txt') as file:
+with open('five_games/words.txt') as file:
     words = [line.rstrip() for line in file]
 #words= ("awake","blush","focal","evade","serve", "model", "karma", "grade", "quite")
 class Wordle:
@@ -34,7 +34,7 @@ class Wordle:
         for idx, char in enumerate(user_guess):
             if char in self.word:
                 if char == self.word[idx]:
-                    char = f"[green]{char}[/]" #gree
+                    char = f"[red]{char}[/]" #gree
                 else:
                     char = f"[yellow]{char}[/]" #yellow
             self.guess_dict[self.num_guesses][idx] = char

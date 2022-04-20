@@ -18,7 +18,3 @@ def guess_the_number(x):
             print('Too low !')
         else:
             print('Too High!')
-
-print()
-print()
-print()
