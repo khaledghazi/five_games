@@ -2,6 +2,7 @@ from gtn import guess_the_number
 from rps import rock_paper_scissors
 from wordle import Wordle
 from connect_four import ConnectFour
+from tictactoe import TicTacToe
 while True:
     txt= """Mini Games !!!
     -Guess the number (1)
@@ -23,6 +24,8 @@ Select a game (press a number or 'q' to quit):"""
         game= ConnectFour()
         game.play()
     elif value == "5":
-        pass
+        game = TicTacToe()
+        game.play()
+
     elif value == "q":
         break
